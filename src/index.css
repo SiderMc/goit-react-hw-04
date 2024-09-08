@@ -1,0 +1,9 @@
+ul {
+    list-style: none;
+}
+ul {
+    margin: 0;
+}
+.ReactModal__Body--open {
+    overflow: hidden;
+}

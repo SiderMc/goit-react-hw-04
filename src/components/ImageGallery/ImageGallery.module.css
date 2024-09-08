@@ -1,0 +1,26 @@
+.image__gallery {
+    width: 100%;
+}
+.gallery__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.gallery__list_item {
+    position: relative;
+    flex: 0 1 calc((100% - 60px) / 5);
+    padding: 3px;
+    background: linear-gradient(170deg, #0896a0, #02554c);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 300ms linear;
+    @media screen and (max-width: 1200px) {
+        flex: 0 1 calc((100% - 30px) / 3);
+    }
+}
+
+.gallery__list_item:hover {
+    transform: scale(1.01);
+    transition: transform 300ms linear;
+}
